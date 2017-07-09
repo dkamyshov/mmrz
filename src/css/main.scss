@@ -1,0 +1,189 @@
+#mmrz {
+    color: black;
+    font-size: 12pt;
+    font-family: Tahoma;
+    padding: 0;
+    margin: 0;
+
+    .grid:after {
+        display: table;
+        content: "";
+        clear: both;
+    }
+
+    .left {
+        float: left;
+    }
+
+    .right {
+        float: right;
+    }
+
+    .pull-right {
+        text-align: right;
+    }
+
+    .pull-left {
+        text-align: left;
+    }
+
+    .pull-center {
+        text-align: center;
+    }
+
+    .block {
+        display: block;
+        margin: auto;
+    }
+
+    .mmrz__screen {
+        padding: 4px;
+    }
+
+    h1 {
+        font-size: 16pt;
+    }
+
+    table {
+        width: 100%;
+
+        border-collapse: collapse;
+
+        .hightlighted-row {
+            background-color: #E2E2E2;
+        }
+
+        th {
+            text-align: left;
+            padding: 6px;
+        }
+
+        tr {
+            &:nth-child(even) {
+                background-color: #EFEFEF;
+            }
+
+            &.selected {
+                background-color: #FFF989;
+            }
+        }
+
+        td {
+            padding: 6px;
+
+            &.input {
+                padding: 3px;
+            }
+        }
+    }
+
+    input, select {
+        padding: 2px;
+        font-size: 12pt;
+    }
+
+    input[type=button] {
+        padding: 8px;
+        border-radius: 4px;
+        border: 1px solid #E2E2E2;
+        color: white;
+        text-shadow: 1px 1px 2px gray;
+
+        &:disabled {
+            background: gray !important;
+        }
+
+        &.green {
+            background: #00D900;
+            background: linear-gradient(to top, #00D900, #00FF00);
+
+            &:hover {
+                background: #00D900;
+            }
+
+            &:active {
+                background: linear-gradient(to bottom, #00D900, #00FF00);
+            }
+        }
+
+        &.blue {
+            background: #0091E5;
+            background: linear-gradient(to top, #0074B7, #0091E5);
+
+            &:hover {
+                background: #0074B7;
+            }
+
+            &:active {
+                background: linear-gradient(to bottom, #0074B7, #0091E5);
+            }
+        }
+
+        &.red {
+            background: #E5000F;
+            background: linear-gradient(to top, #BC000C, #E5000F);
+
+            &:hover {
+                background: #BC000C;
+            }
+
+            &:active {
+                background: linear-gradient(to bottom, #BC000C, #E5000F);
+            }
+        }
+    }
+
+    .link-control {
+        border-bottom: 1px dotted black;
+        cursor: pointer;
+
+        &:hover {
+            color: gray;
+            border-bottom: 1px dotted gray;
+        }
+
+        &.danger {
+            color: red;
+            border-bottom: 1px dotted red;
+
+            &:hover {
+                color: #FF9393;
+            }
+        }
+
+        &.good {
+            color: #00C92F;
+            border-bottom: 1px dotted #00C92F;
+
+            &:hover {
+                color: #00F739;
+            }
+        }
+    }
+
+    .mmrz__group {
+        border-bottom: 1px dashed gray;
+
+        &.add {
+            border-bottom: none;
+        }
+
+        .mmrz__group__header__element {
+            padding: 6px;
+            display: inline-block;
+
+            &.input {
+                padding: 3px;
+            }
+        }
+    }
+
+    .mmrz__progress_bar {
+        width: 100%;
+        height: 10px;
+
+        .progress_bar__element {
+            height: 10px;
+        }
+    }
+}

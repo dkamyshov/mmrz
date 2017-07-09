@@ -1,0 +1,34 @@
+{
+  "name": "scratch-ts-react-wp",
+  "version": "0.1.0",
+  "description": "bare setup of react, ts, wp",
+  "main": "index",
+  "scripts": {
+    "build": "webpack && node ./scripts/copy.js",
+    "deploy": "node ./scripts/deploy.js",
+    "ship": "npm run build && npm run deploy"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^7.0.18",
+    "@types/react": "^15.0.24",
+    "@types/react-dom": "^15.5.0",
+    "babel-core": "^6.24.1",
+    "babel-loader": "^7.0.0",
+    "css-loader": "^0.28.1",
+    "extract-text-webpack-plugin": "^2.1.0",
+    "fs-extended": "^0.2.1",
+    "node-sass": "^4.5.2",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4",
+    "redux": "^3.6.0",
+    "sass-loader": "^6.0.3",
+    "source-map-loader": "^0.2.1",
+    "style-loader": "^0.17.0",
+    "uglifyjs-webpack-plugin": "^0.4.3",
+    "webpack": "^2.5.0"
+  },
+  "stylePath": "./style.css",
+  "homepage": "http://mmrz.dev/"
+}
