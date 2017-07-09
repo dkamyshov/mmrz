@@ -9,7 +9,7 @@ Simple functional clone of memrise.com with React and Redux.
 
 ## Live demo
 
-[Click here]([http://all-site-2.nichost.ru/adel/mmrz/)
+[Click here](http://all-site-2.nichost.ru/adel/mmrz/)
 
 ## Contacts
 
